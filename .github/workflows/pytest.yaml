@@ -7,7 +7,7 @@ jobs:
 
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: true  # cancel other matrix jobs when one fails
+      fail-fast: false  # cancel other matrix jobs when one fails
       matrix:
         python-version: ["3.7", "3.10"]
         # Test two environments:
